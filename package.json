@@ -22,8 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "npx prettier --write .",
-    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
+    "fix": "npx prettier --write .",
+    "format": "eslint --ext .js,.jsx,.ts,.tsx --fix src/",
+    "lint": "yarn fix",
     "prepare-husky": "husky install"
   },
   "eslintConfig": {
@@ -67,8 +68,9 @@
     }
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+    "./src/*.(ts,tsx,scss,css)": [
+      "prettier --write",
+      "git add"
     ]
   }
 }
