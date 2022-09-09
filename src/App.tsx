@@ -1,9 +1,9 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="font-extrabold text-sky-500 text-5xl">Hello World</h1>
+      <h1>Hello World</h1>
     </div>
   );
 }
