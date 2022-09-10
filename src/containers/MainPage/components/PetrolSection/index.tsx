@@ -9,7 +9,7 @@ function PetrolSection() {
       <div className={styles.title}>
         <h3>Petrol</h3>
       </div>
-      <Slider data={petrolData}/>
+      <Slider data={petrolData} />
     </section>
   );
 }

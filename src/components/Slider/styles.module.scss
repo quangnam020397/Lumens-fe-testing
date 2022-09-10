@@ -1,5 +1,4 @@
 .slider__list {
-
   .slider__items {
     @apply max-w-[200px] h-[240px];
 
@@ -11,7 +10,6 @@
       @apply w-[200px];
       h5 {
         @apply text-base font-semibold text-active mt-4;
-
       }
 
       p {

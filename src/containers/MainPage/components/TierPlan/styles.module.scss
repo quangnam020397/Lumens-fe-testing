@@ -18,12 +18,9 @@
   }
 
   .card {
-
     background-image: url(../../../../assets/imgs/background/header.png);
 
     @apply bg-primary bg-cover w-[calc(100%-2rem)] p-6 absolute bottom-0 translate-y-1/2 rounded-lg shadow-base;
-
-
 
     label {
       @apply text-base font-semibold text-grey-1 mb-2;
