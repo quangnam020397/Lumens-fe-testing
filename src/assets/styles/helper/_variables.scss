@@ -1,0 +1,31 @@
+body {
+  // background-color
+  --bg-primary  : #fff;
+  --bg-base     : #E5E5E5;
+  --bg-secondary: #171725;
+  --bg-danger   : #FC5A5A;
+
+
+  // border color
+  --border-secondary: #171725;
+  --border-grey-1   : #F1F1F5;
+  --border-grey-2   : #D5D5DC;
+  --border-grey-3   : #E2E2EA;
+  --border-primary  : #FAFAFB;
+  --border-danger   : #FC5A5A;
+
+
+  // text color
+  --text-primary  : #fff;
+  --text-grey-1   : #B5B5BE;
+  --text-grey-2   : #92929D;
+  --text-secondary: #171725;
+  --text-active   : #0062FF;
+  --text-danger   : #FC5A5A;
+
+
+  // shadow
+  --primary-shadow-color: rgba(23, 23, 37, 0.04);
+
+  --card-shadow: 0px 12px 18px var(--primary-shadow-color);
+}

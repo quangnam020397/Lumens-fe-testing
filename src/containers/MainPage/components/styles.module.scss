@@ -1,0 +1,11 @@
+.title {
+  @apply h-[72px] flex items-center;
+
+  h3 {
+    @apply font-semibold text-lg text-secondary;
+  }
+}
+
+.container {
+  @apply pl-6;
+}
