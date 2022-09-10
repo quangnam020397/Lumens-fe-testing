@@ -1,4 +1,4 @@
-name: fe-ucars-tesiting
+name: fe-lumens-tesiting
 on:
   push:
     branches: [dev]
@@ -31,7 +31,7 @@ jobs:
           file: ./docker/Dockerfile.prod
           builder: ${{ steps.buildx.output.name }}
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/images:ucars-testing.staging.fe.latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/images:lumens-testing.latest
 
       # verify docker images
       - name: Verify
@@ -46,5 +46,5 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
           script: |
-            cd /home/kevin/docker/ucars-testing
-            sh redeploy.fe.sh
+            cd /home/kevin/docker/lumens-testing
+            sh redeploy.sh

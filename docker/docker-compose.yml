@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  node:
+    container_name: be_dlu_schedule_bot
+    restart: always
+    image: xaythixin/images:lumens-testing.latest
+    # ports:
+    # - 3000:3000
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    external: true
