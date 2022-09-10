@@ -1,15 +1,15 @@
-.slider__list {
   .slider__items {
-    @apply max-w-[200px] h-[240px];
+    @apply max-w-[200px] min-h-[240px] shadow-base border-grey-1 rounded mb-6;
 
-    img {
-      @apply w-full object-cover;
+    svg {
+      @apply w-full;
     }
 
     div {
-      @apply w-[200px];
+      @apply w-[200px] p-4;
+
       h5 {
-        @apply text-base font-semibold text-active mt-4;
+        @apply text-base font-semibold text-active;
       }
 
       p {
@@ -17,4 +17,3 @@
       }
     }
   }
-}
