@@ -1,0 +1,57 @@
+.tier__plan {
+  @apply p-4 h-[414px] bg-secondary relative;
+
+  .back__icon {
+    @apply w-10 h-10 bg-primary rounded-full flex justify-center items-center mb-4;
+  }
+
+  .content {
+    @apply text-primary px-2;
+
+    h2 {
+      @apply font-semibold text-32 mb-2;
+    }
+
+    p {
+      @apply text-base font-normal;
+    }
+  }
+
+  .card {
+    background-image: url(../../../../assets/imgs/background/header.png);
+
+    @apply bg-primary bg-cover w-[calc(100%-2rem)] p-6 absolute bottom-0 translate-y-1/2 rounded-lg shadow-base;
+
+    label {
+      @apply text-base font-semibold text-grey-1 mb-2;
+    }
+
+    h4 {
+      @apply font-normal text-5xl;
+    }
+
+    .process__bar {
+      @apply max-h-[5px] mt-[33px] mb-[34px];
+    }
+
+    p {
+      @apply text-base font-normal text-grey-2;
+    }
+
+    a {
+      @apply text-active font-normal text-base;
+    }
+
+    button {
+      @apply bg-secondary text-primary font-semibold text-lg py-[18px] text-center w-full rounded mt-6;
+    }
+
+    .time__updated {
+      @apply text-sm font-normal text-grey-1 mt-4 mb-0 text-center;
+    }
+  }
+}
+
+.container {
+  @apply h-[648px];
+}
