@@ -31,7 +31,10 @@
     }
 
     .process__bar {
-      @apply max-h-[5px] mt-[33px] mb-[34px];
+      @apply max-h-[5px] mb-[34px];
+
+      margin-top: 33px;
+
     }
 
     p {
@@ -53,5 +56,5 @@
 }
 
 .container {
-  @apply h-[648px];
+  height: 648px;
 }
